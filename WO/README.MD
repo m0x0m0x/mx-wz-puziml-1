@@ -1,0 +1,9 @@
+1. [Diraz](#diraz)
+
+> Main wokz will be in here
+
+# Diraz
+
+| Dira            | Huh          |
+| --------------- | ------------ |
+| [`hfz`](./hfz/) | HF work here |
