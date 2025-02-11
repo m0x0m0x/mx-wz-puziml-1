@@ -2,3 +2,14 @@
 
 import boxen from "boxen";
 import chalk from "chalk";
+
+export async function drawBox(text: string) {
+    console.log(
+        boxen(`${chalk.green(text)}`,
+            {
+                title: 'magical',
+                titleAlignment: 'center',
+                padding: 0.2,
+            })
+    );
+}
