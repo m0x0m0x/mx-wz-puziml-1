@@ -24,12 +24,11 @@ b1() {
     hea1 "UV Jupyter Lan Installation Commands"
 }
 
-c1() {
+encode_to_hex_input() {
     hea1 "Use cast to convert UTF8 to hex"
     echo -e ""
-    echo -e "--------------------------------"
-    echo -e "${BLUE}Enter the name of the project: "
-    echo -e "--------------------------------"
+    echo -e "${BLUE}Write Text to encode: "
+    echo -e "--------------------------------${NC}"
     read -r dataz
     if [ -z "$dataz" ]; then
         echo -e "${RED}BASTARD! PutSomething!${NC}"
@@ -50,4 +49,4 @@ c1() {
 }
 
 # Execution
-c1
+encode_to_hex_input
