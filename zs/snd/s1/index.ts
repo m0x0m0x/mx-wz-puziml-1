@@ -2,7 +2,7 @@ import { drawBox } from "./src/ut";
 
 async function main() {
     console.clear();
-    await drawBox("Hello World");
+    await drawBox("Alchemy Send Tx ZkSync");
 }
 
 //execute function

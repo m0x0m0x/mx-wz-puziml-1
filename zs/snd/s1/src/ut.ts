@@ -7,9 +7,12 @@ export async function drawBox(text: string) {
     console.log(
         boxen(`${chalk.green(text)}`,
             {
-                title: 'magical',
+                title: 'API Send TX',
                 titleAlignment: 'center',
-                padding: 0.2,
+                borderColor: 'magenta',
+                borderStyle: 'round',
+                backgroundColor: 'black',
+                padding: 0.4,
             })
     );
 }
