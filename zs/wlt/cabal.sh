@@ -28,6 +28,7 @@ ca_wa_ba() {
     SEP_RPC="https://rpc.ankr.com/eth_sepolia"
     HOL_RPC="https://rpc.ankr.com/eth_holesky"
     ZK_RPC="https://zksync-sepolia.g.alchemy.com/v2/2NRBvZOFhOQuqbDnkH_SF8SjYhl-55Uy"
+    OP_RPC="https://opt-sepolia.g.alchemy.com/v2/gIJfFIVuntukM_nQhW7au1sKmU81HdsU"
 
     CO1S="cast b -e ${WA1} -r ${SEP_RPC}"
     CO1H="cast b -e ${WA1} -r ${HOL_RPC}"
@@ -35,6 +36,8 @@ ca_wa_ba() {
     CO2H="cast b -e ${WA2} -r ${HOL_RPC}"
     CO3Z="cast b -e ${WA1} -r ${ZK_RPC}"
     CO32Z="cast b -e ${WA2} -r ${ZK_RPC}"
+    CO4OP="cast b -e ${WA1} -r ${OP_RPC}"
+    CO42OP="cast b -e ${WA2} -r ${OP_RPC}"
 
     w1_output_sepolia=$(eval "$CO1S")
     if [ $? -ne 0 ]; then
@@ -59,6 +62,21 @@ ca_wa_ba() {
         echo -e "${RED}${WA2}Holesky balance check failed${NC}"
         exit 1
     fi
+
+    # --- ZKSYNC SEPOLIA ---
+    w3_output_zksync=$(eval "$CO3Z")
+    if [ $? -ne 0 ]; then
+        echo -e "${RED}${WA2}Zkcync balance check failed${NC}"
+        exit 1
+    fi
+
+    w32_output_zksync=$(eval "$CO32Z")
+    if [ $? -ne 0 ]; then
+        echo -e "${RED}${WA2}Zkcync balance check failed${NC}"
+        exit 1
+    fi
+
+    #--- OPTIMISM SEPOLIA ---
 
     w3_output_zksync=$(eval "$CO3Z")
     if [ $? -ne 0 ]; then
