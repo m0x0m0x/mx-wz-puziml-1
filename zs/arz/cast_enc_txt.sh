@@ -133,12 +133,17 @@ send_encoded_data_to_chain() {
     hea1 "Send Encoded Data from to Chain from encode_to_hex_input() command"
 
     WA1K="0xba65f456082be58af6b3d6644e5150682ce2503fb8c9477fa42fba019680949e"
-    WA2=""
+    WA2="0x58855397faae1468F00534bFb5eD43f1430b6E9e"
     SEP_RPC="https://rpc.ankr.com/eth_sepolia"
     ZK_RPC="https://zksync-sepolia.g.alchemy.com/v2/2NRBvZOFhOQuqbDnkH_SF8SjYhl-55Uy"
-    cmd1=""
+    cmd1="cast send --private-key $WA1K --value 1wei -- --data $dataz $WA2 --rpc $SEP_RPC"
+    echo -e ""
+    echo -e "-- Sending to Sepolia Chain"
+    echo -e "${GREEN} Executing ${cmd1} ${NC}"
+    eval "$cmd1"
+    echo -e "${GREEN} !!!DONE!!!!${NC}"
 
 }
 
 # Execution
-encodedata__to_hex_input
+send_encoded_data_to_chain
