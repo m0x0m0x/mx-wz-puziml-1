@@ -34,7 +34,7 @@ c1() {
 
 # Rotating image clockwise
 c3() {
-    CO="ffmpeg -i g.jpg -vf \"transpose=1\" g1.jpg"
+    CO="ffmpeg -i g.jpg -vf \"transpose=1\" g11.jpg"
     echo -e "${GREEN} Executing the command: ${CO} ${NC}"
     eval "$CO"
 }
@@ -58,4 +58,4 @@ c5() {
 }
 
 # Execution
-c1
+c3
