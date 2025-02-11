@@ -112,7 +112,7 @@ read -r -d '' dataz <<'EOF'
 EOF
 
 #Function that will convert data stored in variable to hex
-encodedata__to_hex_input() {
+enc_data_to_hex_input() {
     hea1 "Use cast to convert UTF8 Data to hex"
 
     cmd1="cast fa \"$dataz\""
@@ -147,4 +147,4 @@ send_encoded_data_to_chain() {
 }
 
 # Execution
-send_encoded_data_to_chain
+enc_data_to_hex_input
