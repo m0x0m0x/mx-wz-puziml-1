@@ -58,14 +58,60 @@ encodedata__to_hex_input() {
     hea1 "Use cast to convert UTF8 Data to hex"
 
     read -r -d '' dataz <<'EOF'
-
- ███████╗ ███╗   ███╗ ███████╗ ██╗      ██╗      ██████╗   █████╗  ███╗   ██╗ ████████╗ ██╗   ██╗
- ██╔════╝ ████╗ ████║ ██╔════╝ ██║      ██║      ██╔══██╗ ██╔══██╗ ████╗  ██║ ╚══██╔══╝ ╚██╗ ██╔╝
- ███████╗ ██╔████╔██║ █████╗   ██║      ██║      ██████╔╝ ███████║ ██╔██╗ ██║    ██║     ╚████╔╝ 
- ╚════██║ ██║╚██╔╝██║ ██╔══╝   ██║      ██║      ██╔═══╝  ██╔══██║ ██║╚██╗██║    ██║      ╚██╔╝  
- ███████║ ██║ ╚═╝ ██║ ███████╗ ███████╗ ███████╗ ██║      ██║  ██║ ██║ ╚████║    ██║       ██║   
- ╚══════╝ ╚═╝     ╚═╝ ╚══════╝ ╚══════╝ ╚══════╝ ╚═╝      ╚═╝  ╚═╝ ╚═╝  ╚═══╝    ╚═╝       ╚═╝   
-
+╔══════════════════════════════════════════════════════════════════════════════╗
+║MMMMWNKK;,,',xxxxkkkxkxxxxkkxxkxxxodddddoododddddddoooloclllllccllllllloddddoo║
+║MMMWNXKK;',,,dddxxxxxxxxxxxxxxxxxxccllclc;:codddoollooc:c:llllllllllllooddddod║
+║NNXXXK00,''',ldddxdddxxxdddxxxxxxd;,'.':ddc;,;:loollcllcc:clllllloooooooodoolo║
+║K000000O,'''',cdddxddddoddddxdooo:......',;ll;:c;:clcclccllcclooodddddddddoodl║
+║K0OO0OO0,.''',,;llloooooodoooll:'.............coddklcccclllooolodxxxdodxxkkkkx║
+║K0000OkO,''',:clooddoollllccll;............l:lXx;'.,ccccllloodddlddxO0KKKKKK0k║
+║00000OOO,''',clllooolooooolc;'............:kxdoKx;,:ccccllooodkxokOKXNWWWWWWNK║
+║0OOOOOOO,''',lllllllllllllc'.............'cW0KOxc;:::::ccllodxkokOKNWMMMMMMMWX║
+║0OOO0OOO,'.''clllcllllclc;...............'cXK00k:;::::ccclloodooOO0XNMMMMMMMWX║
+║00OOOOOO'....,;ccccccc:,'.................;dddd:;;::::clclooll:oxxOKXNWMMMWNXO║
+║000O0OOx.....,,,;:cc:,....................,O0l;;:;;;;::lllll:cccodxkOKXXXXK0Ox║
+║kkOkdlc:.....''',,;,'.....................':doxxk0Oxc:;::::::c::clodxOOOOOkkxo║
+║kxdl:;,;.....''',,'.......................';ddxxkXWWWKkl:::::::::c:clodxddddol║
+║xl:;;;;;.....''',..''.....................',lxdkkx0OOXWMNOl:::::::;:::::c:ccc:║
+║o:;;;,,:.....,,'.',,.......................';okkkdOOxkOKXWMNOl:::;;:;::c;:::::║
+║c:;;;;,:.....,,'cc;........................',ckxxkkkkxkk00KNWMNOl:;;;;;;;:;;;;║
+║c:;:;;;:.....';ok:o'........................,;xOxdk00KNK00KXNWWMMXkc;;;;;,;;,,║
+║:;;;;;;c....,xOOX0kl,,''.....................:oxkxdddxKXXOOKOKKKXNWWO;,,,,,,,,║
+║:;;;;;;c...ck00NNXOxd:,.....................'coxkkkdl:oOX0OOO00xxKXNNx;,,'',,'║
+║:;;;;;:l..cx00KO0K0do,;,...................':okO0OOOxkOOxdxdk0xdkkOO00c,''''''║
+║:::;;;:o..oxOOdkOoll'..::,,,'.,;;,''..',,,;lldOOOkO0kKWMk'';dlldocdkokc'...''.║
+║::::;::o. ;odxxooldo'..,:cloll:::c:l;lx::coxkxOOOOkkOKXO,'''lkNMKkd::c'.......║
+║::::::cd. .;clc;:dOd'.'':loxdxolldoooxdddd0OxxxkkkOO00o''''c0MMXOdo:'.........║
+║::::c:cx. . .';:oNWWx''':oxkdkOxdkxkk0OkkkkxkOOOkO0Okd'''':0WWKkdl;...........║
+║cc::::cd.    ..:ox0KXd,''dooOxdk00OO0OkkxOOO000Kk0K0x;..'lKWXOxdl,............║
+║c::::::o     ...,codxxdclk0OolkkOkx0OxxKKk00Okkxo00k:''ckNNOolc;..............║
+║c::;;:;l     ..,cccclodk0Oc;:odddxdkdxoxxxxdooodo;lOK0xKNOoc;'....'''.........║
+║l::;;;:o     ,kNMWXOlccclllodoclllodxxooollxxolc:oxxdkOoxc,';cdOKXNMMMWX0l....║
+║lcc:;;;l    .o0NWWNXo;lkKNWNXKkxddolc:cc:;cccccoOWMMMWOc;cokKKXNWMMMMMMMWXl...║
+║olcc:;:o    .oO0KXXdcdkOXWWNXKOxxxOOkkxxkOOxoodxONWMMMMWdkKNNWMMMMMMWNXK0kd,..║
+║ollc:cco    'cdxxxocdxkOKXXXXKKK0OO0KKKKK0kxxkkOO0XWMMMMWkKWMMMWWNXXKOOkxdl'..║
+║xodllcco    .:ll;:odxkkO0KKXXKKXKXWMMMMWNXXKKXKKKKKXXNNWNkkKNXXXK0OOxxdodo:. .║
+║xddoollo    .:ld;:odxOO0KKXNNXNNNNMMMMMMWNNWMMWNNNXXKXXK0kdk0K0OOkkxooolc:.   ║
+║kxxddooo    .;ddcldxxO0KXNWWWMWWWWWMWNNWNWMMMMMMMWNXKK0Okxxxx0Okkxxdol::;.    ║
+║Okxxddol     .;cloddxk0XNWMMMMMMMMMWKdkXWMMMMMMMMMWXKKOkxdddxkkxddooc;::.     ║
+║dlxxdooo      .,:codxk0XWMMMMMMMMMMM0lOKWMMMMMMMMMWNK0kxddooxxdooll;',.       ║
+║..cododo       .,:lodkOXNWMMMMMMMMMM0oOKWMMMMMMMWWNKOOxddoooddoll:'..         ║
+║ddclxddd        .;lldkOKXWMMMMMMMMMMOlk0XWWMMMMWNXKOkxxdoooooooc'...    .   ..║
+║lc:ldddo         .,cldxk0KXNWWMMMMMWklxO0XNNNNNXKK0kxdooololl;.         . ....║
+║lldddodd           ..;codxkO00KK00xO0OdloxOO0KK00OOxddolc:;.               . .║
+║dododdxd     ...,'....,,;::cllcldlcc:cldxdolldxxxddol:;,c....':''';o..'',oc;..║
+║::;:cccc.   .'',0c....lcokOo'. ;'.':lc;;;:o:,'..,:odddoxk....;l;;,cx;,,;ckoc,,║
+║''',,,,l.....;;cO:...loc;,';.  .ll:x0xl::cxd  ....,,;cd0Xc'',okoccx0dc:cdKOdc;║
+║,d,.,;:l...',lccc,,'lkolcokk.;:.oko0OdxOOd0l',,:'''clclkKXo::kOdllxOklllxOOxoc║
+║cK.  .:l,''';oc::,,,;:,',:;..:llclldddxxl:cdko:l;,.:xkccokkdoO0kddkOkxxxOkKOdl║
+║.c   .dc ..;:llldool,''.',k;c,',;;lOklc:;;;cOK0xdox,.'',;'',:ldddxkkxxxkkO0Odl║
+║ .  .xWk.  .:lllxool:,''';KdllokdloNXOdc;:cxNNX000Nkl:;;o::odkOkkd0Oxxkkdllol:║
+║ ;   .;.    'oodKkddol:;;oNOddd0kdkWWKxlllloOK0000Xkxxo:llcod0x:...,;:;'.'''..║
+║ ;.          coxXOxxoc:ccxWOdloOOkONN0xoolllodk00XX0OkkxdxxOkl.....'::,'';oc'.║
+║.....     .  'od0OkxlcccokKdoooOOxkO0xodxdddxxxkO0KKOkkkxOOo.......,,,;cokd,..║
+║   .cl .  ;, ,,d0OkxollldxxoolodxxxkOkxkkkxkkkxkO0KXOxkkx0Kko'  ..,''.'.'''...║
+║..,lco..,'cl,.:;O0OOxddddddooloxxOkkkkkOOkOkOkkOO0KNKkOOxKK0WKxlc:cccoo;,'..''║
+╚══════════════════════════════════════════════════════════════════════════════╝
 EOF
 
     cmd1="cast fa \"$dataz\""
