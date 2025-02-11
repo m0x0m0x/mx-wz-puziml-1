@@ -26,7 +26,15 @@ b1() {
 
 c1() {
     hea1 "Use cast to convert UTF8 to hex"
-    dataz="Smell Her Ass and Pussy"
+    echo -e ""
+    echo -e "--------------------------------"
+    echo -e "${BLUE}Enter the name of the project: "
+    echo -e "--------------------------------"
+    read -r dataz
+    if [ -z "$dataz" ]; then
+        echo -e "${RED}BASTARD! PutSomething!${NC}"
+        exit 1
+    fi
 
     cmd1="cast fa \"$dataz\""
     hex_out=$(eval "$cmd1")
