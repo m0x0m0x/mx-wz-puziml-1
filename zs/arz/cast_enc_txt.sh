@@ -136,7 +136,7 @@ send_encoded_data_to_chain() {
     WA2="0x58855397faae1468F00534bFb5eD43f1430b6E9e"
     SEP_RPC="https://rpc.ankr.com/eth_sepolia"
     ZK_RPC="https://zksync-sepolia.g.alchemy.com/v2/2NRBvZOFhOQuqbDnkH_SF8SjYhl-55Uy"
-    cmd1="cast send --private-key $WA1K $WA2 $dataz -r $SEP_RPC --value 1wei"
+    cmd1="cast send --private-key $WA1K -r $SEP_RPC  --value 1wei  $WA2 $dataz "
     echo -e ""
     echo -e "-- Sending to Sepolia Chain"
     echo -e "${GREEN} Executing trx${NC}"
