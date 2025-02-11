@@ -23,7 +23,7 @@ b1() {
 
 # Artem function gfx rendering
 c1() {
-    FIL="g.jpg"
+    FIL="g11.jpg"
     CO="artem --border --background $FIL"
     CO2="artem --border --background $FIL --output g1.ansi"
     echo -e "${GREEN} Executin the command: ${CO} ${NC}"
@@ -58,4 +58,4 @@ c5() {
 }
 
 # Execution
-c3
+c1
