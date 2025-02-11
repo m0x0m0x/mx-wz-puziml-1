@@ -1,4 +1,4 @@
 ---Output---
-0x6c69636b
+0x57686174206d65616e2074686973
 ---input---
-lick
+What mean this
