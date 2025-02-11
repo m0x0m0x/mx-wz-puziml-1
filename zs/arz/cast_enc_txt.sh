@@ -125,5 +125,10 @@ EOF
     echo -e ""
 }
 
+send_encoded_data_to_chain() {
+    hea1 "Send Encoded Data from to Chain from encode_to_hex_input() command"
+
+}
+
 # Execution
 encodedata__to_hex_input
