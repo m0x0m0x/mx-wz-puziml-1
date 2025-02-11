@@ -27,12 +27,18 @@ b1() {
 c1() {
     hea1 "Use cast to convert UTF8 to hex"
     dataz="Smell Her Ass and Pussy"
-    cmd1="cast fa "${dataz}"
 
+    cmd1="cast fa \"$dataz\""
     hex_out=$(eval "$cmd1")
+    cmd2="cast tas $hex_out"
+    hex_in=$(eval "$cmd2")
 
     echo -e "${CYAN}---Output---${NC}"
     echo -e "${GREEN} ${hex_out} ${NC}"
+    echo -e ""
+    echo -e "${YELLOW}---Input---${NC}"
+    echo -e "${GREEN} ${hex_in} ${NC}"
+
 }
 
 # Execution
