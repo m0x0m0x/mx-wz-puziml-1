@@ -16,3 +16,16 @@ export async function drawBox(text: string) {
             })
     );
 }
+
+export async function drawBox2(text: string) {
+    console.log(
+        boxen(`${chalk.green(text)}`,
+            {
+                title: 'Zksync Send TX',
+                titleAlignment: 'center',
+                borderColor: 'magenta',
+                borderStyle: 'round',
+                padding: 0.4,
+            })
+    );
+}
