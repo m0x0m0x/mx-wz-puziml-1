@@ -66,27 +66,27 @@ ca_wa_ba() {
     # --- ZKSYNC SEPOLIA ---
     w3_output_zksync=$(eval "$CO3Z")
     if [ $? -ne 0 ]; then
-        echo -e "${RED}${WA2}Zkcync balance check failed${NC}"
+        echo -e "${RED}${WA2}ZkSyncERA balance check failed${NC}"
         exit 1
     fi
 
     w32_output_zksync=$(eval "$CO32Z")
     if [ $? -ne 0 ]; then
-        echo -e "${RED}${WA2}Zkcync balance check failed${NC}"
+        echo -e "${RED}${WA2}ZkSyncERA balance check failed${NC}"
         exit 1
     fi
 
     #--- OPTIMISM SEPOLIA ---
 
-    w3_output_zksync=$(eval "$CO3Z")
+    w4_output_optimism=$(eval "$CO4OP")
     if [ $? -ne 0 ]; then
-        echo -e "${RED}${WA2}Zkcync balance check failed${NC}"
+        echo -e "${RED}${WA2}Optimism Sepolia balance check failed${NC}"
         exit 1
     fi
 
-    w32_output_zksync=$(eval "$CO32Z")
+    w42_output_optimism=$(eval "$CO42OP")
     if [ $? -ne 0 ]; then
-        echo -e "${RED}${WA2}Zkcync balance check failed${NC}"
+        echo -e "${RED}${WA2}Optimism Sepolia balance check failed${NC}"
         exit 1
     fi
 
@@ -94,14 +94,17 @@ ca_wa_ba() {
     echo -e "${CYAN}Sepolia RPC: $SEP_RPC${NC}"
     echo -e "${CYAN}Holesky RPC: $HOL_RPC${NC}"
     echo -e "${CYAN}Zksync RPC: $ZK_RPC${NC}"
+    echo -e "${CYAN}Optimism RPC: $OP_RPC${NC}"
     echo -e "-------------------------------------------------------"
     echo -e "${GREEN}${WA1} - Sepolia Balance: $w1_output_sepolia${NC}"
     echo -e "${GREEN}${WA1} - Holesky Balance: $w1_output_holesky${NC}"
     echo -e "${GREEN}${WA1} - Zksync Balance: $w3_output_zksync${NC}"
+    echo -e "${GREEN}${WA1} - Optimism Balance: $w4_output_optimism ${NC}"
     echo -e "-------------------------------------------------------"
     echo -e "${GREEN}${WA2} - Sepolia Balance: $w2_output_sepolia${NC}"
     echo -e "${GREEN}${WA2} - Holesky Balance: $w2_output_holesky${NC}"
     echo -e "${GREEN}${WA2} - Zksync Balance: $w32_output_zksync${NC}"
+    echo -e "${GREEN}${WA2} - Optimism Balance: $w42_output_optimism ${NC}"
     echo -e "-------------------------------------------------------"
     echo -e ""
     echo -e "${GREEN}Balance Check Completed${NC}"
