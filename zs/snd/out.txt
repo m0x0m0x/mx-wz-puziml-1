@@ -1,0 +1,4 @@
+---Output---
+0x6c69636b
+---input---
+lick

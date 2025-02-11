@@ -39,12 +39,17 @@ encode_to_hex_input() {
     hex_out=$(eval "$cmd1")
     cmd2="cast tas $hex_out"
     hex_in=$(eval "$cmd2")
+    file_name="out.txt"
 
     echo -e "${CYAN}---Output---${NC}"
     echo -e "${GREEN} ${hex_out} ${NC}"
+    echo "---Output---" >${file_name}
+    echo "$hex_out" >>${file_name}
     echo -e ""
     echo -e "${YELLOW}---Input---${NC}"
     echo -e "${GREEN} ${hex_in} ${NC}"
+    echo "---input---" >>${file_name}
+    echo "$hex_in" >>${file_name}
 
 }
 
