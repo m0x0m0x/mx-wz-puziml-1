@@ -127,7 +127,7 @@ encodedata__to_hex_input() {
 }
 
 # Sending transcation with encoded data to the blockchain
-# From Cast Manual - cast send --private-key <YOUR_PRIVATE_KEY> --value 10wei --data 0x48656c6c6f2c207a6b53796e6321 <RECIPIENT_ADDRESS>
+# > cast send --private-key <PRIVATE_KEY> 0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc $(cast from-utf8 "hello world") --rpc-url http://127.0.0.1:8545/
 
 send_encoded_data_to_chain() {
     hea1 "Send Encoded Data from to Chain from encode_to_hex_input() command"
@@ -136,10 +136,10 @@ send_encoded_data_to_chain() {
     WA2="0x58855397faae1468F00534bFb5eD43f1430b6E9e"
     SEP_RPC="https://rpc.ankr.com/eth_sepolia"
     ZK_RPC="https://zksync-sepolia.g.alchemy.com/v2/2NRBvZOFhOQuqbDnkH_SF8SjYhl-55Uy"
-    cmd1="cast send --private-key $WA1K --value 1wei -- --data $dataz $WA2 --rpc $SEP_RPC"
+    cmd1="cast send --private-key $WA1K $WA2 $dataz --rpc-url $SEP_RPC"
     echo -e ""
     echo -e "-- Sending to Sepolia Chain"
-    echo -e "${GREEN} Executing ${cmd1} ${NC}"
+    echo -e "${GREEN} Executing trx${NC}"
     eval "$cmd1"
     echo -e "${GREEN} !!!DONE!!!!${NC}"
 
