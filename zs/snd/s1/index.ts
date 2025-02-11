@@ -1,4 +1,4 @@
-import { drawBox } from "./src/ut";
+import { drawBox, drawBox2 } from "./src/ut";
 
 async function main() {
     console.clear();
@@ -7,6 +7,7 @@ async function main() {
 ╔═╝ ╠╩╗ ╚═╗ ╚╦╝ ║║║ ║   Alchemy Send Tx ZkSync 
 ╚═╝ ╩ ╩ ╚═╝  ╩  ╝╚╝ ╚═╝
 `);
+    await drawBox2("Wallet Send Tx ZkSync");
 }
 
 //execute function

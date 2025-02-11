@@ -23,7 +23,7 @@ export async function drawBox2(text: string) {
             {
                 title: 'Zksync Send TX',
                 titleAlignment: 'center',
-                borderColor: 'magenta',
+                borderColor: 'green',
                 borderStyle: 'round',
                 padding: 0.4,
             })
