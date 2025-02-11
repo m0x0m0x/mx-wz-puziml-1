@@ -56,12 +56,20 @@ encode_to_hex_input() {
 #Function that will convert data stored in variable to hex
 encodedata__to_hex_input() {
     hea1 "Use cast to convert UTF8 Data to hex"
-    dataz
+
+    read -r -d '' dataz <<'EOF'
+
+ ███████╗ ███╗   ███╗ ███████╗ ██╗      ██╗      ██████╗   █████╗  ███╗   ██╗ ████████╗ ██╗   ██╗
+ ██╔════╝ ████╗ ████║ ██╔════╝ ██║      ██║      ██╔══██╗ ██╔══██╗ ████╗  ██║ ╚══██╔══╝ ╚██╗ ██╔╝
+ ███████╗ ██╔████╔██║ █████╗   ██║      ██║      ██████╔╝ ███████║ ██╔██╗ ██║    ██║     ╚████╔╝ 
+ ╚════██║ ██║╚██╔╝██║ ██╔══╝   ██║      ██║      ██╔═══╝  ██╔══██║ ██║╚██╗██║    ██║      ╚██╔╝  
+ ███████║ ██║ ╚═╝ ██║ ███████╗ ███████╗ ███████╗ ██║      ██║  ██║ ██║ ╚████║    ██║       ██║   
+ ╚══════╝ ╚═╝     ╚═╝ ╚══════╝ ╚══════╝ ╚══════╝ ╚═╝      ╚═╝  ╚═╝ ╚═╝  ╚═══╝    ╚═╝       ╚═╝   
+
+EOF
 
     cmd1="cast fa \"$dataz\""
     hex_out=$(eval "$cmd1")
-    cmd2="cast tas $hex_out"
-    hex_in=$(eval "$cmd2")
     file_name="out.txt"
 
     echo -e "${CYAN}---Output---${NC}"
@@ -69,11 +77,7 @@ encodedata__to_hex_input() {
     echo "---Output---" >${file_name}
     echo "$hex_out" >>${file_name}
     echo -e ""
-    echo -e "${YELLOW}---Input---${NC}"
-    echo -e "${GREEN} ${hex_in} ${NC}"
-    echo "---input---" >>${file_name}
-    echo "$hex_in" >>${file_name}
 }
 
 # Execution
-encode_to_hex_input
+encodedata__to_hex_input
