@@ -53,11 +53,8 @@ encode_to_hex_input() {
     echo "$hex_in" >>${file_name}
 }
 
-#Function that will convert data stored in variable to hex
-encodedata__to_hex_input() {
-    hea1 "Use cast to convert UTF8 Data to hex"
-
-    read -r -d '' dataz <<'EOF'
+# Variable for the encoded data to be called in functions
+read -r -d '' dataz <<'EOF'
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║MMMMWNKK;,,',xxxxkkkxkxxxxkkxxkxxxodddddoododddddddoooloclllllccllllllloddddoo║
 ║MMMWNXKK;',,,dddxxxxxxxxxxxxxxxxxxccllclc;:codddoollooc:c:llllllllllllooddddod║
@@ -114,6 +111,10 @@ encodedata__to_hex_input() {
 ╚══════════════════════════════════════════════════════════════════════════════╝
 EOF
 
+#Function that will convert data stored in variable to hex
+encodedata__to_hex_input() {
+    hea1 "Use cast to convert UTF8 Data to hex"
+
     cmd1="cast fa \"$dataz\""
     hex_out=$(eval "$cmd1")
     file_name="out.txt"
@@ -125,8 +126,17 @@ EOF
     echo -e ""
 }
 
+# Sending transcation with encoded data to the blockchain
+# From Cast Manual - cast send --private-key <YOUR_PRIVATE_KEY> --value 10wei --data 0x48656c6c6f2c207a6b53796e6321 <RECIPIENT_ADDRESS>
+
 send_encoded_data_to_chain() {
     hea1 "Send Encoded Data from to Chain from encode_to_hex_input() command"
+
+    WA1K="0xba65f456082be58af6b3d6644e5150682ce2503fb8c9477fa42fba019680949e"
+    WA2=""
+    SEP_RPC="https://rpc.ankr.com/eth_sepolia"
+    ZK_RPC="https://zksync-sepolia.g.alchemy.com/v2/2NRBvZOFhOQuqbDnkH_SF8SjYhl-55Uy"
+    cmd1=""
 
 }
 
