@@ -4,6 +4,8 @@
 
 # Diraz
 
-| Dira            | Huh          |
-| --------------- | ------------ |
-| [`hfz`](./hfz/) | HF work here |
+| Dira            | Huh            |
+| --------------- | -------------- |
+| [`hfz`](./hfz/) | HF work here   |
+| [`gra`](./gra/) | Gradio Work    |
+| [`str`](./str/) | Streamlit Work |
